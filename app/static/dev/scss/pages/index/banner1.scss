@@ -1,0 +1,112 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.banner1 {
+  background-color: #f7f7f7;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: $sectionPaddingTop;
+  padding-bottom: $sectionPaddingBottom;
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    .f-row {
+      @include mya(25px);
+      display: flex;
+      flex-direction: column;
+
+      .text{
+        margin-top: 55px;
+      }
+      h3 {
+        font-family: "MuseoCyrl700", serif;
+        font-size: $h4FontSize;
+        text-align: left;
+      }
+
+      .btn{
+        padding-left: 0;
+      }
+
+      .btn-orange {
+        padding: 10px 15px;
+      }
+
+    }
+  }
+}
+
+@include max-w(992){
+  .banner1{
+    .f-row{
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column-reverse;
+      .text{
+        margin-top: 25px;
+      }
+      .logo-eric{
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include max-w(768){
+  .banner1{
+    .f-row{
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column-reverse;
+      .text{
+        margin-top: 25px;
+      }
+      .logo-eric{
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner1 {
+    h5{
+      font-size: $h5FontSize375;
+    }
+    h4{
+      font-size: $h4FontSize375;
+    }
+    padding-top: $sectionPaddingTop375;
+    padding-bottom: $sectionPaddingBottom375;
+    .f-row{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      @include mxa(15px);
+      .text {
+        h3 {
+          font-size: $h3FontSize375;
+        }
+      }
+      .logo-eric {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .s-row{
+      margin-top: 15px;
+      @include mxa(15px);
+      p{
+        font-size: $pFontSizeMax375;
+      }
+    }
+  }
+}

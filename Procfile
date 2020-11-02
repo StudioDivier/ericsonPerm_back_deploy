@@ -1,0 +1,1 @@
+web: gunicorn EricksonPerm_back.wsgi --log-file -
