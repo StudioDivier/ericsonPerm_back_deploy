@@ -26,7 +26,7 @@ SECRET_KEY = '5#8km4+_-(0%zw3c38u=d=wbku1e156ojo3$i_ude$1c99nn02'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fathomless-peak-68859.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['polar-lake-68224.herokuapp.com', 'localhost']
 
 # Application definition
 
